@@ -1,0 +1,106 @@
+.navbar-container {
+  position: absolute; /* 👈 place it inside homepage */
+  top: 15px; /* spacing from top */
+  left: 50%;
+  transform: translateX(-50%); /* center it horizontally */
+  z-index: 100; /* 👈 instead of absolute */
+  margin: 35px auto 0 auto; /* keep same spacing from top */
+  width: fit-content; /* shrink to content so it's centered */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar {
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  backdrop-filter: blur(12px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.333);
+  border-radius: 40px;
+  padding: 10px 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: limegreen;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #fff825;
+}
+
+.login-btn {
+  position: absolute;
+  right: -100px;
+  top: 5px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 30px;
+  background: limegreen;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #fff;
+  color: limegreen;
+}
+.profile-dropdown {
+  position: absolute; /* relative to nearest positioned ancestor */
+  top: 0px;
+  right: -60px;
+  /*   background: white; */
+  /*   border: 1px solid #ccc; */
+  padding: 10px;
+  z-index: 100;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 100;
+  text-align: left;
+  padding: 5px 0;
+}
+
+.dropdown-content a,
+.dropdown-content button {
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover,
+.dropdown-content button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Show dropdown on hover */
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}

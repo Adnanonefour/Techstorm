@@ -1,0 +1,181 @@
+.homepage {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-heading {
+  font-size: 7rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 2px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 130px;
+}
+.color-s {
+  color: #ffa500;
+}
+.color-t {
+  color: #d580ff;
+}
+.color-r {
+  color: #15d700;
+}
+.color-o {
+  color: #7b00ff;
+}
+.color-m {
+  color: #00ffcc;
+}
+.colot-n {
+  color: #ff2600;
+}
+.details-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 20px;
+}
+.sticker {
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+  margin-left: -100px;
+  margin-top: -10px;
+  margin-bottom: 110px;
+  position: absolute;
+  top: -60px;
+}
+.details-row {
+  position: relative;
+}
+
+.date-wrapper {
+  position: absolute;
+  top: 5px;
+  right: -70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.date {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.barcode-text {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  color: #ddd;
+  text-transform: uppercase;
+}
+
+/* .barcode-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 40px 0;
+}
+
+.barcode-effect {
+  width: 320px;
+  height: 50px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #ffffff 0px,
+    #ffffff 2px,
+    transparent 2px,
+    transparent 4px,
+    #ffffff 5px,
+    #ffffff 7px,
+    transparent 7px,
+    transparent 10px
+  );
+} */
+
+.footer {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  font-size: 1rem;
+  color: #ddd;
+  width: 100%;
+  line-height: 1.6;
+}
+.footer p {
+  margin: 12px 0;
+}
+
+@media (max-width: 1024px) {
+  .hero-heading {
+    font-size: 5rem;
+  }
+  .date {
+    font-size: 2.5rem;
+  }
+  /* .barcode-effect {
+    width: 240px;
+    height: 40px;
+  } */
+}
+
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 3.5rem;
+    flex-wrap: wrap;
+  }
+  .details-row {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+  }
+  .date-wrapper {
+    align-items: center;
+  }
+  .date {
+    font-size: 2rem;
+  }
+  .barcode-text {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .sticker {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  .date {
+    font-size: 1.5rem;
+  }
+  /* .barcode-effect {
+    width: 180px;
+    height: 30px;
+  } */
+  .footer {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
