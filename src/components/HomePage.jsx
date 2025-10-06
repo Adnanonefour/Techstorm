@@ -8,13 +8,13 @@ function HomePage() {
     <div className="homepage" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="overlay">
         <h1 className="hero-heading">
-          DEV
+          TECH
           <span className="color-s">S</span>
           <span className="color-t">T</span>
-          <span className="color-r">R</span>
-          <span className="color-o">E</span>
-          <span className="color-m">E</span>
-          <span className="color-n">T</span>
+            <span className="color-o">O</span>
+            <span className="color-r">R</span>
+             <span className="color-m">M</span>
+            
         </h1>
 
         <div className="details-row">
@@ -28,10 +28,10 @@ function HomePage() {
               objectFit: "contain",
             }}
           />
-          {/* <div className="date-wrapper">
+          <div className="date-wrapper">
             <p className="date">26 Aug 2025</p>
             <p className="barcode-text">UNLEASH THE HERO WITHIN</p>
-          </div> */}
+          </div>
         </div>
 
         <div className="barcode-wrapper">
